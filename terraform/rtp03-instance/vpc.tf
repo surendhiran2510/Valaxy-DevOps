@@ -13,7 +13,7 @@ resource "aws_subnet" "rtp03-public_subnet_01" {
     vpc_id = "${aws_vpc.rtp03-vpc.id}"
     cidr_block = var.subnet
     map_public_ip_on_launch = "true"
-    availability_zone = "ap-south-1a"
+    availability_zone = "us-east-1a"
     tags = {
       Name = "rtp03-public_subnet_01"
     }
